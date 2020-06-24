@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+  <nav class="navbar sticky-top navbar-light bg-primary">
+    <a class="navbar-brand" href="#">Weather API</a>
+  </nav><br>
+
+    <div class="main">
+      <div class="d-flex justify-content-center">
+        <input type="text" placeholder="Enter the city" class="form-control-lg" id="input_text">
+      </div><br>
+      <div class="d-flex justify-content-center">
+        <input type="submit" value="Find" class="btn btn-primary" id="submit">
+      </div>
+    </div>
+    </div><br>
+
+  <div class="container justify-content-center text-center" style="width: 20rem;">
+    <div id="icon">
+      <img id="icon" class="card-img-top" src="icons/unknown.png" alt="Weather icon">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title" id="name"></h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="temp"></li>
+      <li class="list-group-item" id="feels_like"></li>
+      <li class="list-group-item" id="desc"></li>
+    </ul>
+  </div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
